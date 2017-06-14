@@ -209,7 +209,7 @@ body{
 	transform: translate(-50%,0);
 }
 .full-hero{
-	background-image: url(/images/shark.jpg);
+	background-image: url(../images/shark.jpg);
 	background-position: center top;
 
 }
