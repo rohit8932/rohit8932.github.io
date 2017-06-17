@@ -2,19 +2,40 @@
 <html>
 
 <head>
-	<title>Test Page: Don't Panic</title>
+
+		<title> Test page: Don't Panic</title>
+	
+	
+	<link  href="../favicon.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, intial-scale=1" >
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.css">
+	
 	<link rel="stylesheet" type="text/css" href="http://localhost:4000/css/main.css">
 </head>
 
 <body>
 	<header class="header">
 	<nav>
+	<input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+	<label class="show-mobile-menu" for="mobile-menu">Menu</label>
+	
 		<ul class="header-nav nav-links" >
 			<li><a href="http://localhost:4000/">Home</a></li>
 <li><a href="http://localhost:4000/gallery">Gallery</a></li>
-<li><a href="http://localhost:4000/blog/">Blog</a></li>
+<li class="dropdown">
+	<a class="drop-trigger" href="/blog">Blog</a>
+	<ul class="drop-menu">
+		
+		<li><a href="/2017/06/15/title-of-second-post.html">This is the title of the post</a></li>
+		
+		<li><a href="/2017/06/14/title-of-post.html">This is the title of the post</a></li>
+		
+	</ul>
+</li>
 <li><a href="/2017/06/15/title-of-second-post.html">Newest Post</a></li>
 
 		</ul>
@@ -53,7 +74,16 @@
 		<ul class="footer-nav nav-links">
 		<li><a href="http://localhost:4000/">Home</a></li>
 <li><a href="http://localhost:4000/gallery">Gallery</a></li>
-<li><a href="http://localhost:4000/blog/">Blog</a></li>
+<li class="dropdown">
+	<a class="drop-trigger" href="/blog">Blog</a>
+	<ul class="drop-menu">
+		
+		<li><a href="/2017/06/15/title-of-second-post.html">This is the title of the post</a></li>
+		
+		<li><a href="/2017/06/14/title-of-post.html">This is the title of the post</a></li>
+		
+	</ul>
+</li>
 <li><a href="/2017/06/15/title-of-second-post.html">Newest Post</a></li>
 
 			

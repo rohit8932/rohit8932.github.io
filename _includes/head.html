@@ -1,6 +1,17 @@
 <head>
-	<title>Test Page: Don't Panic</title>
+{% if page.title %}
+	<title>{{ page.title }} | Test page</title>
+	{% else %}
+		<title> Test page: Don't Panic</title>
+	{% endif %}
+	
+	<link  href="../favicon.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, intial-scale=1" >
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.css">
+	
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css">
 </head>
